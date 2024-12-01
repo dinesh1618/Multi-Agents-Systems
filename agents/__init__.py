@@ -20,8 +20,8 @@ class AgentManager:
             "validator": ValidatorAgent(max_retries=max_retries, verbose=verbose)
         }
 
-        def get_agent(self, agent_name):
-            agent = self.agent.get(agent_name)
-            if not agent:
-                raise ValueError(f"Agent {agent_name} not found.")
-            return agent
+    def get_agent(self, agent_name):
+        agent = self.agent.get(agent_name)
+        if not agent:
+            raise ValueError(f"Agent {agent_name} not found.")
+        return agent

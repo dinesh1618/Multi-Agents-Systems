@@ -26,7 +26,7 @@ class AgentBase(ABC):
                 if self.verbose:
                     logger.info(f"[{self.name}] Sending message to OpenAI.")
                     for msg in messages:
-                        logger.debug(f"{msg['role']: msg['content']}")
+                        logger.debug(f"  {msg['role']}: {msg['content']}")
                 response = openai.chat.completions.create(
                     model="gpt-4",
                     messages=messages,

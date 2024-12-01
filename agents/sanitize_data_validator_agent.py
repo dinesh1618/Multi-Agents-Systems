@@ -9,7 +9,7 @@ class SanitizeDataValidatorAgent(AgentBase):
         system_message = "You are an AI assistant that validates the sanitization of medical data by checking for the removal of Protected Health Information (PHI)."
         user_content = (
             "Given the original data and PHI data, verify that all PHI has been removed.\n"
-            "List any remaining PHI in the sanitized data and raate the sanitization process on a scale of 1 to 5, where 5 indicates complete sanitization.\n\n"
+            "List any remaining PHI in the sanitized data and rate the sanitization process on a scale of 1 to 5, where 5 indicates complete sanitization.\n\n"
             f"Original Data:\n{medical_data}\n\n"
             f"Sanitized Data:\n{sanitize_data}\n\n"
             "Validation:"

@@ -3,7 +3,7 @@ import os, sys
 
 
 if os.path.exists("logs"):
-    os.makedirs("logs")
+    os.makedirs("logs", exist_ok=True)
 
 
 logger.remove() #Remove default logger
