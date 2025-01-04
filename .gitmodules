@@ -1,0 +1,3 @@
+[submodule "AI-Agents-using-Ollama"]
+	path = AI-Agents-using-Ollama
+	url = https://github.com/dinesh1618/AI-Agents-using-Ollama.git
